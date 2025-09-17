@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const Header = () => {
   return (
-    <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+    <div id='top' className='w-11/12 max-w-3xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 pt-24 md:pt-28 lg:pt-32'>
       <motion.div
       initial={{scale: 0}}
       whileInView={{scale: 1}}
@@ -24,14 +24,14 @@ const Header = () => {
     whileInView={{y: 0, opacity: 1}}
     transition={{duration: 0.8, delay: 0.5}}
     className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-        frontend web developer passionate about creating amazing user experiences.</motion.h1>
+        Computer Science Student passionate about software development and emerging technologies.</motion.h1>
 
         <motion.p
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-        I am a passionate frontend developer with expertise in modern web technologies, focused on creating beautiful and functional user interfaces.
+        Motivated Computer Science student seeking software development opportunities. Quick learner with strong interest in emerging technologies. Experienced in mobile apps, web development, and LLM applications.
         </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

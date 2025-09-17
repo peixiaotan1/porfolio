@@ -78,38 +78,38 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Meeting Scheduler',
+        description: 'Full-stack Web App',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Energy Management App',
+        description: 'React Native Mobile App',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Essay Blog Platform',
+        description: 'React & Node.js',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'LLM Digital Twin',
+        description: 'Unity & AI Research',
         bgImage: '/work-4.png',
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web Development', description: 'Full-stack web applications using React, Node.js, and modern frameworks for responsive and interactive user experiences.', link: '' },
+    { icon: assets.mobile_icon, title: 'Mobile App Development', description: 'Cross-platform mobile applications using React Native with intuitive interfaces and seamless user experiences.', link: '' },
+    { icon: assets.ui_icon, title: 'Backend Development', description: 'Scalable RESTful APIs and server-side development using Node.js, Express.js, and various databases.', link: '' },
+    { icon: assets.graphics_icon, title: 'AI & Research', description: 'LLM applications, machine learning integration, and research projects in emerging technologies.', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React, Next.js, TypeScript' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Computer Science & Software Development' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Multiple full-stack applications' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Programming Languages', description: 'C++, C#, JavaScript, PHP, Python, SQL, HTML, CSS' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. Computer Science, University of Tennessee (GPA: 3.77/4.0)' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Experience', description: 'Research Assistant, Mobile App Developer, Web Developer' }
 ];
 
 export const toolsData = [
