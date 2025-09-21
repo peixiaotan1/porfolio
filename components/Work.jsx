@@ -37,25 +37,32 @@ const Work = ({isDarkMode}) => {
     whileInView={{ opacity: 1 }}
     transition={{ delay: 0.9, duration: 0.6 }}
     className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
-        {workData.map((project, index)=>(
-            <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            key={index}
-            className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
-            style={{backgroundImage: `url(${project.bgImage})`}}>
-                <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
-                    <div>
-                        <h2 className='font-semibold'>{project.title}</h2>
-                        <p className='text-sm text-gray-700'>{project.description}</p>
+        {workData.map((project, index)=>{
+            // 为博客项目添加链接
+            const projectLink = project.title === 'Essay Blog Platform' ? 'https://essayblog.vercel.app/' : '#';
+            
+            return (
+                <motion.a
+                href={projectLink}
+                target={project.title === 'Essay Blog Platform' ? '_blank' : '_self'}
+                rel={project.title === 'Essay Blog Platform' ? 'noopener noreferrer' : ''}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                key={index}
+                className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group block'
+                style={{backgroundImage: `url(${project.bgImage})`}}>
+                    <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
+                        <div>
+                            <h2 className='font-semibold'>{project.title}</h2>
+                            <p className='text-sm text-gray-700'>{project.description}</p>
+                        </div>
+                        <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
+                            <Image src={assets.send_icon} alt='send icon' className='w-5'/>
+                        </div>
                     </div>
-                    <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                        <Image src={assets.send_icon} alt='send icon' className='w-5'/>
-                    </div>
-                </div>
-                
-            </motion.div>
-        ))}
+                </motion.a>
+            )
+        })}
     </motion.div>
 
     <motion.a 
